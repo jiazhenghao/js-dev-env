@@ -1,0 +1,64 @@
+{
+  "name": "js-dev-env",
+  "version": "1.0.0",
+  "description": "building a JavaScript development environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "babel-node buildScripts/startMessage.js",
+    "start": "babel-node buildScripts/srcServer.js",
+    "open:src": "babel-node buildScripts/srcServer.js",
+    "localtunnel": "lt --port 3000 --subdomain jiazhenghao",
+    "share": "npm-run-all --parallel open:src localtunnel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiazhenghao/js-dev-env.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiazhenghao/js-dev-env/issues"
+  },
+  "homepage": "https://github.com/jiazhenghao/js-dev-env#readme",
+  "dependencies": {
+    "whatwg-fetch": "3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.6.4",
+    "@babel/core": "7.6.4",
+    "@babel/node": "7.6.3",
+    "@babel/preset-env": "7.6.3",
+    "@babel/register": "7.6.2",
+    "babel-loader": "8.0.6",
+    "chai": "4.2.0",
+    "chalk": "2.4.2",
+    "cheerio": "0.22.0",
+    "compression": "1.7.4",
+    "cross-env": "6.0.3",
+    "css-loader": "3.2.0",
+    "eslint": "6.5.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-watch": "6.0.1",
+    "express": "4.17.1",
+    "extract-text-webpack-plugin": "3.0.2",
+    "html-webpack-plugin": "3.2.0",
+    "jsdom": "15.1.1",
+    "json-schema-faker": "0.4.7",
+    "json-server": "0.15.1",
+    "localtunnel": "2.0.0",
+    "mocha": "6.2.1",
+    "nock": "11.4.0",
+    "npm-run-all": "4.1.5",
+    "numeral": "2.0.6",
+    "open": "6.4.0",
+    "rimraf": "3.0.0",
+    "style-loader": "1.0.0",
+    "surge": "0.21.3",
+    "webpack": "4.41.1",
+    "webpack-dev-middleware": "3.7.2",
+    "webpack-hot-middleware": "2.25.0",
+    "webpack-md5-hash": "0.0.6"
+  }
+}
