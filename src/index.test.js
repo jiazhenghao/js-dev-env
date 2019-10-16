@@ -17,6 +17,6 @@ describe("index.html", () => {
     const dom = new JSDOM(index);
     const document = dom.window.document;
     const h1 = document.getElementsByTagName("h1")[0];
-    expect(h1.innerHTML).to.equal("Hello world!!!");
+    expect(h1.innerHTML).to.equal("Hello world!!");
   });
 });
